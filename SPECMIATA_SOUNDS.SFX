@@ -11,30 +11,30 @@
 
 // ENGINE SOUNDS (INSIDE)
 
-VS_INSIDE_POWER_ENGINE_1=SpecMiata\sm_idle
-VS_INSIDE_POWER_ENGINE_2=SpecMiata\sm_on_low
-VS_INSIDE_POWER_ENGINE_3=SpecMiata\sm_on_mid
-VS_INSIDE_POWER_ENGINE_4=SpecMiata\sm_on_high
+VS_INSIDE_POWER_ENGINE_1=0.6,SpecMiata\sm_idle
+VS_INSIDE_POWER_ENGINE_2=0.6,SpecMiata\sm_on_low
+VS_INSIDE_POWER_ENGINE_3=0.65,SpecMiata\sm_on_mid
+VS_INSIDE_POWER_ENGINE_4=0.7,SpecMiata\sm_on_high
 
-VS_INSIDE_COAST_ENGINE_1=SpecMiata\sm_idle
-VS_INSIDE_COAST_ENGINE_2=SpecMiata\sm_off_low
-VS_INSIDE_COAST_ENGINE_3=SpecMiata\sm_off_mid
-VS_INSIDE_COAST_ENGINE_4=SpecMiata\sm_off_high
+VS_INSIDE_COAST_ENGINE_1=0.6,SpecMiata\sm_idle
+VS_INSIDE_COAST_ENGINE_2=0.6,SpecMiata\sm_off_low
+VS_INSIDE_COAST_ENGINE_3=0.65,SpecMiata\sm_off_mid
+VS_INSIDE_COAST_ENGINE_4=0.7,SpecMiata\sm_off_high
 
 VS_INSIDE_ENGINE_STARTING=SpecMiata\sm_starting
 VS_INSIDE_ENGINE_STARTER=SpecMiata\sm_starter
 
 // ENGINE SOUNDS (OUTSIDE)
 
-VS_OUTSIDE_POWER_ENGINE_1=SpecMiata\sm_idle
-VS_OUTSIDE_POWER_ENGINE_2=SpecMiata\sm_on_low_ex
-VS_OUTSIDE_POWER_ENGINE_3=SpecMiata\sm_on_mid_ex
-VS_OUTSIDE_POWER_ENGINE_4=SpecMiata\sm_on_high_ex
+VS_OUTSIDE_POWER_ENGINE_1=0.5,SpecMiata\sm_idle
+VS_OUTSIDE_POWER_ENGINE_2=0.5,SpecMiata\sm_on_low_ex
+VS_OUTSIDE_POWER_ENGINE_3=0.55,SpecMiata\sm_on_mid_ex
+VS_OUTSIDE_POWER_ENGINE_4=0.6,SpecMiata\sm_on_high_ex
 
-VS_OUTSIDE_COAST_ENGINE_1=SpecMiata\sm_idle
-VS_OUTSIDE_COAST_ENGINE_2=SpecMiata\sm_off_low_ex
-VS_OUTSIDE_COAST_ENGINE_3=SpecMiata\sm_off_mid_ex
-VS_OUTSIDE_COAST_ENGINE_4=SpecMiata\sm_off_high_ex
+VS_OUTSIDE_COAST_ENGINE_1=0.5,SpecMiata\sm_idle
+VS_OUTSIDE_COAST_ENGINE_2=0.5,SpecMiata\sm_off_low_ex
+VS_OUTSIDE_COAST_ENGINE_3=0.55,SpecMiata\sm_off_mid_ex
+VS_OUTSIDE_COAST_ENGINE_4=0.6,SpecMiata\sm_off_high_ex
 
 VS_OUTSIDE_ENGINE_STARTING=SpecMiata\sm_starting
 VS_OUTSIDE_ENGINE_STARTER=SpecMiata\sm_starter
