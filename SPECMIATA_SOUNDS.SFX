@@ -85,18 +85,18 @@ VS_OUTSIDE_ROADNOISE_RUMBLESTRIP=Secondary\rumble_ex.wav
 
 // SKID SOUNDS (INSIDE)
 
-VS_INSIDE_TIRE_SCRUB=1.30,TMTires\tyres_asphalt_scrub_slick_in_2.wav
-VS_INSIDE_SKID_DRY=1.20,TMTires\tyres_asphalt_skid_slick_in_2.wav
-VS_INSIDE_SKID_WET=1.10,TMTires\tyres_asphalt_skid_slick_in_2.wav
+VS_INSIDE_TIRE_SCRUB=1.30,SpecMiata\tyres_asphalt_scrub_slick_in_2.wav
+VS_INSIDE_SKID_DRY=1.20,SpecMiata\tyres_asphalt_skid_slick_in_2.wav
+VS_INSIDE_SKID_WET=1.10,SpecMiata\tyres_asphalt_skid_slick_in_2.wav
 VS_INSIDE_SKID_GRASS=1.20,TMTires\grassskid_in.wav
 VS_INSIDE_SKID_DIRT=TMTires\gravelskid_in.wav
 VS_INSIDE_SKID_GRAVEL=1.30,TMTires\gravelskid_in.wav
 
 // SKID SOUNDS (OUTSIDE)
 
-VS_OUTSIDE_TIRE_SCRUB=1.10,TMTires\tyres_asphalt_scrub_slick_ex_2.wav
-VS_OUTSIDE_SKID_DRY=TMTires\tyres_asphalt_skid_slick_ex_2.wav
-VS_OUTSIDE_SKID_WET=0.9,TMTires\tyres_asphalt_skid_slick_ex_2.wav
+VS_OUTSIDE_TIRE_SCRUB=1.10,SpecMiata\tyres_asphalt_scrub_slick_ex_2.wav
+VS_OUTSIDE_SKID_DRY=SpecMiata\tyres_asphalt_skid_slick_ex_2.wav
+VS_OUTSIDE_SKID_WET=0.9,SpecMiata\tyres_asphalt_skid_slick_ex_2.wav
 VS_OUTSIDE_SKID_GRASS=1.20,TMTires\grassskid_ex.wav
 VS_OUTSIDE_SKID_DIRT=TMTires\gravelskid_ex.wav
 VS_OUTSIDE_SKID_GRAVEL=1.30,TMTires\gravelskid_ex.wav
