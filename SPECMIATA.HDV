@@ -182,6 +182,8 @@ ABS4Wheel=1                         // 0 = old-style single brake pulse, 1 = mor
 ABSGrip=(1.00, 0.20)                // grip multiplied by 1st number and added to 2nd
 ABSLevel=(0.26, 0.75)               // effect of grip on brakes for low ABS and high ABS
 OnboardBrakeBias=0                  // whether brake bias is allowed onboard
+PitcrewPushForce=750           // force that a pitcrew may use when in pitlane and out of fuel
+MarshalPushForce=750           // force that a marshal may use when vehicle is apparently stuck
 
 [ENGINE]
 Normal=SpecMiata_Engine             // unrestricted engine
