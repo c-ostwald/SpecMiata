@@ -1,0 +1,33 @@
+DefaultLivery="SM11.dds"
+Extra0="Interior"
+Extra2="Rims"
+Extra3="Cage"
+Extra4="Wing"
+
+HDVehicle=SpecMiata\SpecMiata.hdv
+Graphics=SpecMiata\SpecMiata.gen
+Spinner=SpecMiata\SpecMiata_Spinner.gen
+Sounds=SpecMiata_Sounds.sfx
+Upgrades=SpecMiata_Upgrades.ini
+Cameras=SpecMiata_Cams.cam
+HeadPhysics=SpecMiata_Headphysics.ini
+Cockpit=SpecMiata_Cockpitinfo.ini
+AIUpgradeClass=SM
+
+//////////////////////////TEAM HISTORY AND INFORMATION///////////////////////////////////////////
+
+
+Number=11
+Team="SM_Racing"
+PitGroup="Group4"
+Driver="Nathanial Sparks"
+Description="SM11"
+Engine="1.6"
+Manufacturer="Mazda"
+Classes="Spec_Miata"
+
+FullTeamName="SM_Racing"
+TeamFounded=2010
+TeamHeadquarters="Texas"
+
+Category="Spec Miata"

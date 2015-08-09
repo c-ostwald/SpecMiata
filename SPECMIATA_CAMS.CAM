@@ -1,0 +1,227 @@
+LocalCam=NOSECAM
+{
+  Fov=(89, 50)
+  Clear=TRUE
+  Color=(164, 218, 249)
+  ClipPlanes=(0.4, 950)
+  LODMultiplier=(1)
+  Size=(1, 1)
+  Center=(0.5, 0.5)
+  MipmapLODBias=(0)
+  Flags1=(0)
+  Flags2=(0)
+  OrientationRate=(240, 360, 120)
+  PositionOffset=(0, 0.35, -0.44)
+  OrientationOffset=(-0.029, 0, 0)
+}
+LocalCam=COCKPIT
+{
+  Fov=(89, 60)
+  Clear=TRUE
+  Color=(164, 218, 249)
+  ClipPlanes=(0.1, 750)
+  LODMultiplier=(1)
+  Size=(1, 1)
+  Center=(0.5, 0.5)
+  MipmapLODBias=(0)
+  Flags1=(0)
+  Flags2=(0)
+  OrientationRate=(600, 900, 300)
+  PositionOffset=(0, 0, 0)
+  OrientationOffset=(-0.03, 0, 0)
+}
+LocalCam=TVCOCKPIT
+{
+  Fov=(89, 50)
+  Clear=TRUE
+  Color=(0, 0, 0)
+  ClipPlanes=(0.2, 750)
+  LODMultiplier=(1)
+  Size=(1, 1)
+  Center=(0.5, 0.5)
+  MipmapLODBias=(0)
+  Flags1=(0)
+  Flags2=(0)
+  OrientationRate=(190, 330, 95)
+  PositionOffset=(0, 0, 0)
+  OrientationOffset=(-0.2, 0, 0)
+}
+LocalCam=SWINGMAN
+{
+  Fov=(89, 50)
+  Clear=TRUE
+  Color=(164, 218, 249)
+  ClipPlanes=(0.5, 1000)
+  LODMultiplier=(2)
+  Size=(1, 1)
+  Center=(0.5, 0.5)
+  MipmapLODBias=(0)
+  Flags1=(0)
+  Flags2=(0)
+  RadiusLimits=(2, 32)
+  PitchLimits=(0, 179)  
+  OrientationRate=(2, 3.6, 0)
+  PositionOffset=(0, 0.25, 1.25)
+  OrientationOffset=(-0.15, 0, 0)
+  Radius=(4.5)
+}
+LocalCam=ONBOARD001 // front left wheel looking forward
+{
+  Fov=(60, 45)
+  Clear=FALSE
+  Color=(0, 0, 0)
+  ClipPlanes=(0.1, 750)
+  LODMultiplier=(1)
+  Size=(1, 1)
+  Center=(0.5, 0.5)
+  MipmapLODBias=(0)
+  Flags1=(0)
+  Flags2=(0)
+  OrientationRate=(360, 360, 360)
+  PositionOffset=(1.040, -0.211, -0.425)
+  OrientationOffset=(0, 0, 0.15)
+}
+LocalCam=ONBOARD002 // front right wheel looking forward
+{
+  Fov=(60, 45)
+  Clear=FALSE
+  Color=(0, 0, 0)
+  ClipPlanes=(0.1, 750)
+  LODMultiplier=(1)
+  Size=(1, 1)
+  Center=(0.5, 0.5)
+  MipmapLODBias=(0)
+  Flags1=(0)
+  Flags2=(0)
+  OrientationRate=(360, 360, 360)
+  PositionOffset=(-1.040, -0.211, -0.425)
+  OrientationOffset=(0, 0, 0.15)
+}
+LocalCam=ONBOARD003 // back left looking forward
+{
+  Fov=(60, 45)
+  Clear=FALSE
+  Color=(0, 0, 0)
+  ClipPlanes=(0.1, 750)
+  LODMultiplier=(1)
+  Size=(1, 1)
+  Center=(0.5, 0.5)
+  MipmapLODBias=(0)
+  Flags1=(0)
+  Flags2=(0)
+  OrientationRate=(360, 360, 360)
+  PositionOffset=(0.94, 0.5, 0.97)
+  OrientationOffset=(0, 0, 0.15)
+}
+LocalCam=ONBOARD004 // back right looking backward
+{
+  Fov=(60, 45)
+  Clear=FALSE
+  Color=(0, 0, 0)
+  ClipPlanes=(0.1, 750)
+  LODMultiplier=(1)
+  Size=(1, 1)
+  Center=(0.5, 0.5)
+  MipmapLODBias=(0)
+  Flags1=(0)
+  Flags2=(0)
+  OrientationRate=(360, 360, 360)
+  PositionOffset=(-0.94, 0.5, 0.97)
+  OrientationOffset=(0, 0, 0.15)
+}
+LocalCam=ONBOARD005 // roof looking forward
+{
+  Fov=(60, 45)
+  Clear=FALSE
+  Color=(0, 0, 0)
+  ClipPlanes=(0.1, 750)
+  LODMultiplier=(1)
+  Size=(1, 1)
+  Center=(0.5, 0.5)
+  MipmapLODBias=(0)
+  Flags1=(0)
+  Flags2=(0)
+  OrientationRate=(360, 360, 360)
+  PositionOffset=(0, 0.75, 0.45)
+  OrientationOffset=(-0.05, 0, 0)
+}
+LocalCam=ONBOARD006 // trunk looking backward
+{
+  Fov=(60, 45)
+  Clear=FALSE
+  Color=(0, 0, 0)
+  ClipPlanes=(0.1, 750)
+  LODMultiplier=(1)
+  Size=(1, 1)
+  Center=(0.5, 0.5)
+  MipmapLODBias=(0)
+  Flags1=(0)
+  Flags2=(0)
+  OrientationRate=(360, 360, 360)
+  PositionOffset=(0, 0.4, .55)
+  OrientationOffset=(-0.02, 3.142, 0)
+}
+LocalCam=ONBOARD007 // back left wheel looking backward
+{
+  Fov=(60, 45)
+  Clear=FALSE
+  Color=(0, 0, 0)
+  ClipPlanes=(0.1, 750)
+  LODMultiplier=(1)
+  Size=(1, 1)
+  Center=(0.5, 0.5)
+  MipmapLODBias=(0)
+  Flags1=(0)
+  Flags2=(0)
+  OrientationRate=(360, 360, 360)
+  PositionOffset=(1.04, -0.211, -0.2)
+  OrientationOffset=(0, 3.142, 0.15)
+}
+LocalCam=ONBOARD008 // back right wheel looking backward
+{
+  Fov=(60, 45)
+  Clear=FALSE
+  Color=(0, 0, 0)
+  ClipPlanes=(0.1, 750)
+  LODMultiplier=(1)
+  Size=(1, 1)
+  Center=(0.5, 0.5)
+  MipmapLODBias=(0)
+  Flags1=(0)
+  Flags2=(0)
+  OrientationRate=(360, 360, 360)
+  PositionOffset=(-1.04, -0.211, -0.2)
+  OrientationOffset=(0, 3.142, 0.15)
+}
+LocalCam=ONBOARD009 // front left high looking backward
+{
+  Fov=(60, 45)
+  Clear=FALSE
+  Color=(0, 0, 0)
+  ClipPlanes=(0.1, 750)
+  LODMultiplier=(1)
+  Size=(1, 1)
+  Center=(0.5, 0.5)
+  MipmapLODBias=(0)
+  Flags1=(0)
+  Flags2=(0)
+  OrientationRate=(360, 360, 360)
+  PositionOffset=(0.84, 0.5, -0.2)
+  OrientationOffset=(0, 3.142, 0)
+}
+LocalCam=ONBOARD010 // front right high looking backward
+{
+  Fov=(60, 45)
+  Clear=FALSE
+  Color=(0, 0, 0)
+  ClipPlanes=(0.1, 750)
+  LODMultiplier=(1)
+  Size=(1, 1)
+  Center=(0.5, 0.5)
+  MipmapLODBias=(0)
+  Flags1=(0)
+  Flags2=(0)
+  OrientationRate=(360, 360, 360)
+  PositionOffset=(-0.84, 0.5, -0.2)
+  OrientationOffset=(0, 3.142, 0)
+}

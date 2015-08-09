@@ -1,0 +1,364 @@
+//----------------------------------------
+SearchPath=<VEHDIR>
+
+SearchPath=SpecMiata
+SearchPath=<VEHDIR>SpecMiata\maps
+SearchPath=SpecMiata\maps
+SearchPath=<VEHDIR>cmaps_maps
+MASFile=SpecMiata\SpecMiata.mas
+MASFile=cmaps.mas
+
+ReflectPlane=(0.0, -1.0, 0.0, 0.0)
+
+//----------------------------------------
+
+Instance=SLOT<ID>
+{
+<STARTUPGRADES>
+Moveable=True
+
+//------------------------------------MAX CAR SETTINGS---------------------------------------------	
+<MAX> MeshFile=<MAXBODY> CollTarget=False HATTarget=False LODIn=(0) LODOut=(25) ShadowCaster=(True, Solid)
+<MAX> MeshFile=<HIGHBODY> CollTarget=False HATTarget=False LODIn=(25) LODOut=(50) ShadowCaster=(True, Solid)
+<MAX> MeshFile=<MEDBODY> CollTarget=False HATTarget=False LODIn=(50) LODOut=(100) ShadowCaster=(True, Solid)
+<MAX> MeshFile=<LOWBODY> CollTarget=False HATTarget=False LODIn=(100) LODOut=(1000) Reflect=NoLOD
+//------------------------------------HIGH CAR SETTINGS--------------------------------------------
+<HIGH> MeshFile=<MAXBODY> CollTarget=False HATTarget=False LODIn=(0) LODOut=(20) ShadowCaster=(True, Solid)
+<HIGH> MeshFile=<HIGHBODY> CollTarget=False HATTarget=False LODIn=(20) LODOut=(50) ShadowCaster=(True, Solid)
+<HIGH> MeshFile=<MEDBODY> CollTarget=False HATTarget=False LODIn=(50) LODOut=(80) ShadowCaster=(True, Solid)
+<HIGH> MeshFile=<LOWBODY> CollTarget=False HATTarget=False LODIn=(80) LODOut=(850) Reflect=NoLOD
+//------------------------------------MED CAR SETTINGS---------------------------------------------
+<MED> MeshFile=<MAXBODY> CollTarget=False HATTarget=False LODIn=(0) LODOut=(17) ShadowCaster=(True, Solid)
+<MED> MeshFile=<MEDBODY> CollTarget=False HATTarget=False LODIn=(17) LODOut=(50) ShadowCaster=(True, Solid)
+<MED> MeshFile=<LOWBODY> CollTarget=False HATTarget=False LODIn=(50) LODOut=(700) Reflect=NoLOD
+//------------------------------------LOW CAR SETTINGS---------------------------------------------
+<LOW> MeshFile=<HIGHBODY> CollTarget=False HATTarget=False LODIn=(0) LODOut=(5) ShadowCaster=(True, Solid)
+<LOW> MeshFile=<MEDBODY> CollTarget=False HATTarget=False LODIn=(5) LODOut=(10) ShadowCaster=(True, Solid)
+<LOW> MeshFile=<LOWBODY> CollTarget=False HATTarget=False LODIn=(10) LODOut=(550) Reflect=NoLOD
+
+
+//------------------------------------SHADOW AND COLLISION OBJECTS---------------------------------
+
+	MeshFile=sm_collbody.gmt Render=False CollTarget=True HATTarget=False LODIn=(0.0) LODOut=(10.0)
+	
+	MeshFile=sm_undershadow.gmt CollTarget=False HATTarget=False AmbientObject=(True,Texture) LODIn=(0) LODOut=(200)
+
+	Actor=VEHICLE
+ 
+	Instance=COCKPIT
+	{
+		Moveable=True
+		MeshFile=<INTROOF> CollTarget=False HATTarget=False ShadowCaster=(True, Solid) LODIn=(0) LODOut=(2) NoHDRLum=True
+		MeshFile=sm_intbase.gmt CollTarget=False HATTarget=False ShadowCaster=(True, Solid) LODIn=(0) LODOut=(2) NoHDRLum=True
+		MeshFile=<MAXINTPARTS> CollTarget=False HATTarget=False ShadowCaster=(True, Solid) LODIn=(0) LODOut=(2) NoHDRLum=True
+		MeshFile=sm_fext.gmt CollTarget=False HATTarget=False ShadowCaster=(True, Solid) LODIn=(0) LODOut=(2) NoHDRLum=True
+		MeshFile=sm_net.gmt CollTarget=False HATTarget=False ShadowCaster=(True, Solid) LODIn=(0) LODOut=(5) NoHDRLum=True
+		<MAX> MeshFile=sm_mirror_c_in.gmt CollTarget=False HATTarget=False ShadowCaster=(True, Solid) LODIn=(0) LODOut=(5) NoHDRLum=True
+		<HIGH> MeshFile=sm_mirror_c_in_LOD.gmt CollTarget=False HATTarget=False ShadowCaster=(True, Solid) LODIn=(0) LODOut=(5) NoHDRLum=True
+		<MED> MeshFile=sm_mirror_c_in_LOD.gmt CollTarget=False HATTarget=False ShadowCaster=(True, Solid) LODIn=(0) LODOut=(5) NoHDRLum=True		
+		<LOW> MeshFile=sm_mirror_c_in_LOD.gmt CollTarget=False HATTarget=False ShadowCaster=(True, Solid) LODIn=(0) LODOut=(5) NoHDRLum=True		
+		<MAX> MeshFile=sm_mirror_l_in.gmt CollTarget=False HATTarget=False ShadowCaster=(True, Solid) LODIn=(0) LODOut=(5) NoHDRLum=True
+		<HIGH> MeshFile=sm_mirror_l_in_LOD.gmt CollTarget=False HATTarget=False ShadowCaster=(True, Solid) LODIn=(0) LODOut=(5) NoHDRLum=True
+		<MED> MeshFile=sm_mirror_l_in_LOD.gmt CollTarget=False HATTarget=False ShadowCaster=(True, Solid) LODIn=(0) LODOut=(5) NoHDRLum=True
+		<LOW> MeshFile=sm_mirror_l_in_LOD.gmt CollTarget=False HATTarget=False ShadowCaster=(True, Solid) LODIn=(0) LODOut=(5) NoHDRLum=True
+		<MAX> MeshFile=sm_mirror_r_in.gmt CollTarget=False HATTarget=False ShadowCaster=(True, Solid) LODIn=(0) LODOut=(5) NoHDRLum=True
+		<HIGH> MeshFile=sm_mirror_r_in_LOD.gmt CollTarget=False HATTarget=False ShadowCaster=(True, Solid) LODIn=(0) LODOut=(5) NoHDRLum=True
+		<MED> MeshFile=sm_mirror_r_in_LOD.gmt CollTarget=False HATTarget=False ShadowCaster=(True, Solid) LODIn=(0) LODOut=(5) NoHDRLum=True
+		<LOW> MeshFile=sm_mirror_r_in_LOD.gmt CollTarget=False HATTarget=False ShadowCaster=(True, Solid) LODIn=(0) LODOut=(5) NoHDRLum=True
+		MeshFile=sm_windshield.gmt CollTarget=False HATTarget=False ShadowCaster=(True, Solid) LODIn=(0) LODOut=(5) NoHDRLum=True
+		MeshFile=sm_dash_max.gmt CollTarget=False HATTarget=False ShadowCaster=(True, Solid) LODIn=(0) LODOut=(5) NoHDRLum=True
+		MeshFile=sm_instrument_panel.gmt CollTarget=False HATTarget=False ShadowCaster=(True, Solid) LODIn=(0) LODOut=(5) NoHDRLum=True
+		// MeshFile=sm_gauge_glass.gmt CollTarget=False HATTarget=False ShadowCaster=(True, Solid) LODIn=(0) LODOut=(5) NoHDRLum=True
+		MeshFile=sm_cables.gmt CollTarget=False HATTarget=False ShadowCaster=(True, Solid) LODIn=(0) LODOut=(5) NoHDRLum=True
+		MeshFile=sm_wipers_max.gmt CollTarget=False HATTarget=False ShadowCaster=(True, Solid) LODIn=(0) LODOut=(5) NoHDRLum=True
+		MeshFile=sm_hood_max.gmt CollTarget=False HATTarget=False ShadowCaster=(True, Solid) LODIn=(0) LODOut=(5) NoHDRLum=True
+		MeshFile=sm_mirror_l_ex.gmt CollTarget=False HATTarget=False ShadowCaster=(True, Solid) LODIn=(0) LODOut=(5) NoHDRLum=True
+		MeshFile=sm_mirror_r_ex.gmt CollTarget=False HATTarget=False ShadowCaster=(True, Solid) LODIn=(0) LODOut=(5) NoHDRLum=True
+		MeshFile=sm_belt.gmt CollTarget=False HATTarget=False ShadowCaster=(True, Solid) LODIn=(0) LODOut=(5) NoHDRLum=True
+	}
+	
+	Instance=NoRainZone_SM
+	{
+		Moveable=True
+		MeshFile=NoRainZone_SM.gmt CollTarget=False HATTarget=False Render=False ShadowCaster=False LODIn=(0) LODOut=(40) Reflect=True
+	}
+
+	Instance=WHEEL
+	{
+		Moveable=True
+		MeshFile=sm_swheel.gmt CollTarget=False HATTarget=False ShadowCaster=(True, Solid) LODIn=(0) LODOut=(5) Reflect=True
+		MeshFile=sm_swheel_low.gmt CollTarget=False HATTarget=False ShadowCaster=(True, Solid) LODIn=(5) LODOut=(40) Reflect=True	
+	}
+	
+	Instance=MIRRORS_OUT
+	{
+		Moveable=True
+		MeshFile=sm_mirror_l_ex.gmt CollTarget=False HATTarget=False ShadowCaster=False LODIn=(0) LODOut=(70) Reflect=True
+		MeshFile=sm_mirror_r_ex.gmt CollTarget=False HATTarget=False ShadowCaster=False LODIn=(0) LODOut=(70) Reflect=True
+	}  	
+
+	Instance=WINDOWS
+	{
+		Moveable=True
+		MeshFile=<WINDOWS> CollTarget=False HATTarget=False LODIn=(0.0) LODOut=(250.0) ShadowReceiver=True
+	}
+<STOPUPGRADES>
+	
+	Instance=WINDSHIELD
+	{
+		Moveable=True
+		MeshFile=sm_windshield.gmt CollTarget=False HATTarget=False LODIn=(0.0) LODOut=(250.0) ShadowReceiver=True
+	}
+
+	Instance=DEBRIS0 //front end
+	{
+		Moveable=True
+		MeshFile=sm_front_max.gmt CollTarget=False HATTarget=False ShadowCaster=(True, Solid) LODIn=(0) LODOut=(20) Reflect=True
+		MeshFile=sm_front_high.gmt CollTarget=False HATTarget=False ShadowCaster=(True, Solid) LODIn=(20) LODOut=(40) Reflect=True
+		MeshFile=sm_front_med.gmt CollTarget=False HATTarget=False ShadowCaster=(True, Solid) LODIn=(40) LODOut=(70) Reflect=True
+		MeshFile=sm_front_low.gmt CollTarget=False HATTarget=False ShadowCaster=(True, Solid) LODIn=(70) LODOut=(280) Reflect=True	
+	}
+	
+	Instance=DEBRIS1 //back end
+	{
+		Moveable=True
+		MeshFile=sm_back_max.gmt CollTarget=False HATTarget=False ShadowCaster=(True, Solid) LODIn=(0) LODOut=(20) Reflect=True
+		MeshFile=sm_back_high.gmt CollTarget=False HATTarget=False ShadowCaster=(True, Solid) LODIn=(20) LODOut=(40) Reflect=True
+		MeshFile=sm_back_med.gmt CollTarget=False HATTarget=False ShadowCaster=(True, Solid) LODIn=(40) LODOut=(70) Reflect=True
+		MeshFile=sm_back_low.gmt CollTarget=False HATTarget=False ShadowCaster=(True, Solid) LODIn=(70) LODOut=(280) Reflect=True	
+	}
+	
+	Instance=DEBRIS2 //hood
+	{
+		Moveable=True
+		MeshFile=sm_hood_max.gmt CollTarget=False HATTarget=False ShadowCaster=(True, Solid) LODIn=(0) LODOut=(20) Reflect=True
+		MeshFile=sm_hood_high.gmt CollTarget=False HATTarget=False ShadowCaster=(True, Solid) LODIn=(20) LODOut=(40) Reflect=True
+		MeshFile=sm_hood_med.gmt CollTarget=False HATTarget=False ShadowCaster=(True, Solid) LODIn=(40) LODOut=(70) Reflect=True
+		MeshFile=sm_hood_low.gmt CollTarget=False HATTarget=False ShadowCaster=(True, Solid) LODIn=(70) LODOut=(280) Reflect=True	
+	}
+	
+	Instance=DEBRIS3 //trunk
+	{
+		Moveable=True
+		MeshFile=sm_trunk_max.gmt CollTarget=False HATTarget=False ShadowCaster=(True, Solid) LODIn=(0) LODOut=(20) Reflect=True
+		MeshFile=sm_trunk_high.gmt CollTarget=False HATTarget=False ShadowCaster=(True, Solid) LODIn=(20) LODOut=(40) Reflect=True
+		MeshFile=sm_trunk_med.gmt CollTarget=False HATTarget=False ShadowCaster=(True, Solid) LODIn=(40) LODOut=(70) Reflect=True
+		MeshFile=sm_trunk_low.gmt CollTarget=False HATTarget=False ShadowCaster=(True, Solid) LODIn=(70) LODOut=(280) Reflect=True	
+	}
+
+//////////////////////////////////////////SUSPENSION//////////////////////////////////////////	
+	
+	Instance=DEBRIS5 //LF Shock
+	{
+		Moveable=True
+		MeshFile=sm_shock_lf.gmt CollTarget=False HATTarget=False ShadowCaster=(True, Solid) LODIn=(0) LODOut=(70) Reflect=True
+	}
+
+	Instance=DEBRIS6 //RF Shock
+	{
+		Moveable=True
+		MeshFile=sm_shock_rf.gmt CollTarget=False HATTarget=False ShadowCaster=(True, Solid) LODIn=(0) LODOut=(70) Reflect=True
+	}
+
+	Instance=DEBRIS7 //LR Shock
+	{
+		Moveable=True
+		MeshFile=sm_shock_lr.gmt CollTarget=False HATTarget=False ShadowCaster=(True, Solid) LODIn=(0) LODOut=(70) Reflect=True
+	}
+
+	Instance=DEBRIS8 //RR Shock
+	{
+		Moveable=True
+		MeshFile=sm_shock_rr.gmt CollTarget=False HATTarget=False ShadowCaster=(True, Solid) LODIn=(0) LODOut=(70) Reflect=True
+	}	
+	
+	Instance=RWING
+	{
+		Moveable=True
+		MeshFile=sm_wingno.gmt CollTarget=False HATTarget=False ShadowCaster=(True, Solid) LODIn=(0) LODOut=(200) Reflect=True
+	}
+	
+/////////////////////////////////INSIDE PARTS//////////////////////////////////////////////////
+
+	Instance=BODYIN
+	{
+		Moveable=True
+		MeshFile=<INTROOF> CollTarget=False HATTarget=False ShadowCaster=(True, Solid) LODIn=(0) LODOut=(20) ShadowReceiver=True Reflect=True
+		MeshFile=sm_intbase.gmt CollTarget=False HATTarget=False ShadowCaster=(True, Solid) LODIn=(0) LODOut=(20) ShadowReceiver=True Reflect=True		
+		
+		MeshFile=<MAXINTPARTS> CollTarget=False HATTarget=False ShadowCaster=(True, Solid) LODIn=(0) LODOut=(5) ShadowReceiver=True Reflect=True
+		MeshFile=<HIGHINTPARTS> CollTarget=False HATTarget=False ShadowCaster=(True, Solid) LODIn=(5) LODOut=(20) ShadowReceiver=True Reflect=True
+		MeshFile=<LOWINTPARTS> CollTarget=False HATTarget=False ShadowCaster=(True, Solid) LODIn=(20) LODOut=(150) ShadowReceiver=True Reflect=True
+
+		MeshFile=sm_net.gmt CollTarget=False HATTarget=False ShadowCaster=(True, Solid) LODIn=(0) LODOut=(50) ShadowReceiver=True Reflect=True		
+		
+		MeshFile=sm_dash_max.gmt CollTarget=False HATTarget=False ShadowCaster=(True, Solid) LODIn=(0) LODOut=(5) ShadowReceiver=True Reflect=True
+		MeshFile=sm_dash_low.gmt CollTarget=False HATTarget=False ShadowCaster=(True, Solid) LODIn=(5) LODOut=(80) ShadowReceiver=True Reflect=True
+		
+		MeshFile=sm_instrument_panel_ext.gmt CollTarget=False HATTarget=False ShadowCaster=(True, Solid) LODIn=(0) LODOut=(20) ShadowReceiver=True Reflect=True
+		
+		MeshFile=sm_wipers_max.gmt CollTarget=False HATTarget=False ShadowCaster=(True, Solid) LODIn=(0) LODOut=(5) ShadowReceiver=True Reflect=True
+		MeshFile=sm_wipers_high.gmt CollTarget=False HATTarget=False ShadowCaster=(True, Solid) LODIn=(5) LODOut=(20) ShadowReceiver=True Reflect=True
+		MeshFile=sm_wipers_low.gmt CollTarget=False HATTarget=False ShadowCaster=(True, Solid) LODIn=(20) LODOut=(150) ShadowReceiver=True Reflect=True
+		
+		MeshFile=sm_cables.gmt CollTarget=False HATTarget=False LODIn=(0.0) LODOut=(5.0) ShadowReceiver=True
+		
+		MeshFile=sm_fext.gmt CollTarget=False HATTarget=False LODIn=(0.0) LODOut=(150.0) ShadowReceiver=True		
+
+		MeshFile=sm_seat_high.gmt CollTarget=False HATTarget=False ShadowCaster=(True, Solid) LODIn=(0) LODOut=(2) Reflect=True
+		MeshFile=sm_seat_low.gmt CollTarget=False HATTarget=False ShadowCaster=(True, Solid) LODIn=(2) LODOut=(30) Reflect=True
+	}
+	
+///////////////////////////DRIVER///////////////////////////
+	Instance=HELMET
+	{
+		Moveable=True
+		MeshFile=sm_helmet.gmt CollTarget=False HATTarget=False LODIn=(0) LODOut=(140) ShadowCaster=False Reflect=True
+	}
+
+	Instance=SBELT
+	{
+		Moveable=True
+		MeshFile=sm_belt.gmt CollTarget=False HATTarget=False LODIn=(0) LODOut=(250) ShadowCaster=False Reflect=True
+	}
+
+	Instance=DRIVER
+	{
+		Moveable=True
+		MeshFile=sm_driver_max.gmt CollTarget=False HATTarget=False LODIn=(0) LODOut=(8) ShadowCaster=False Reflect=True
+		MeshFile=sm_driver_med.gmt CollTarget=False HATTarget=False LODIn=(8) LODOut=(50) ShadowCaster=False Reflect=True
+		MeshFile=sm_driver_low.gmt CollTarget=False HATTarget=False LODIn=(50) LODOut=(200) ShadowCaster=False Reflect=True	
+		AnimFile=sm_steer.anm
+	}	
+
+
+/////////////////////////////////////////////Headlights and Tail Lights/////////////////////////////////////////////
+
+	Light=HeadlightL
+	{
+		Type=Spot Pos=( 0.54, 0.42,-2.7) Dir=(0.0, -0.3, -0.7) Range=(0.0, 320.0) Active=False Attenuate=(0.15, 0.01, 0.00003) Hotspots=(10, 60) Falloff=(2) Intensity=(2.1) Color=(254, 234, 184)
+	}
+	Light=HeadlightR
+	{
+		Type=Spot Pos=(-0.54, 0.42,-2.7) Dir=(0.0, -0.3, -0.7) Range=(0.0, 320.0) Active=False Attenuate=(0.15, 0.01, 0.00003) Hotspots=(10, 60) Falloff=(2) Intensity=(2.1) Color=(254, 234, 184)
+	}	
+
+	Instance=HlightDS   //Headlights -Driver Side
+	{
+		Moveable=True
+		MeshFile=hlglo_DS.gmt CollTarget=False HATTarget=False LODIn=(0.0) LODOut=(350) 
+	}
+
+	Instance=HlightPS   //Headlights -Passenger Side
+	{
+		Moveable=True
+		MeshFile=hlglo_PS.gmt CollTarget=False HATTarget=False LODIn=(0.0) LODOut=(350) 
+	}
+
+	Instance=BlightPS
+	{
+		Moveable=True 
+		MeshFile=blglo_ps.gmt CollTarget=False HATTarget=False LODIn=(0.00) LODOut=(200) 
+	}
+
+	Instance=BlightDS
+	{
+		Moveable=True 
+		MeshFile=blglo_ds.gmt CollTarget=False HATTarget=False LODIn=(0.00) LODOut=(200) 
+	}
+
+	Instance=BACKFIRE
+	{
+		Moveable=TRUE
+		MeshFile=sm_backfire.gmt CollTarget=False HATTarget=False LODIn=(0) LODOut=(80)		
+	}
+
+
+///////////////////////////////////////////////WHEELS///////////////////////////////////////////////////////
+
+	Instance=LFTIRE
+	{
+		Moveable=True
+		MeshFile=sm_tire_lf_max.gmt CollTarget=False HATTarget=False ShadowCaster=(True, Solid) LODIn=(0) LODOut=(12) ShadowReceiver=True Reflect=True
+		MeshFile=sm_tire_lf_med.gmt CollTarget=False HATTarget=False ShadowCaster=(True, Solid) LODIn=(12) LODOut=(40) ShadowReceiver=True Reflect=True
+		MeshFile=sm_tire_lf_low.gmt CollTarget=False HATTarget=False ShadowCaster=(True, Solid) LODIn=(40) LODOut=(350) ShadowReceiver=True Reflect=NoLOD
+
+		MeshFile=sm_rim_lf_max.gmt CollTarget=False HATTarget=False ShadowCaster=(True, Solid) LODIn=(0) LODOut=(12) ShadowReceiver=True Reflect=True
+		MeshFile=sm_rim_lf_med.gmt CollTarget=False HATTarget=False ShadowCaster=(True, Solid) LODIn=(12) LODOut=(40) ShadowReceiver=True Reflect=True
+		MeshFile=sm_rim_lf_low.gmt CollTarget=False HATTarget=False ShadowCaster=(True, Solid) LODIn=(40) LODOut=(300) ShadowReceiver=True Reflect=NoLOD
+		
+		MeshFile=sm_rotor_lf.gmt CollTarget=False HATTarget=False ShadowCaster=(True, Solid) LODIn=(0) LODOut=(30) ShadowReceiver=True Reflect=True
+		MeshFile=sm_discglow_lf.gmt CollTarget=False HATTarget=False ShadowCaster=False LODIn=(0) LODOut=(60) ShadowReceiver=False Reflect=True
+	}
+
+	Instance=LFSPINDLE
+	{
+		Moveable=True
+		MeshFile=sm_caliper_lf.gmt CollTarget=False HATTarget=False LODIn=(0.00) LODOut=(10.0) ShadowReceiver=True
+	}
+
+	Instance=RFTIRE
+	{
+		Moveable=True
+		MeshFile=sm_tire_rf_max.gmt CollTarget=False HATTarget=False ShadowCaster=(True, Solid) LODIn=(0) LODOut=(12) ShadowReceiver=True Reflect=True
+		MeshFile=sm_tire_rf_med.gmt CollTarget=False HATTarget=False ShadowCaster=(True, Solid) LODIn=(12) LODOut=(40) ShadowReceiver=True Reflect=True
+		MeshFile=sm_tire_rf_low.gmt CollTarget=False HATTarget=False ShadowCaster=(True, Solid) LODIn=(40) LODOut=(350) ShadowReceiver=True Reflect=NoLOD
+
+		MeshFile=sm_rim_rf_max.gmt CollTarget=False HATTarget=False ShadowCaster=(True, Solid) LODIn=(0) LODOut=(12) ShadowReceiver=True Reflect=True
+		MeshFile=sm_rim_rf_med.gmt CollTarget=False HATTarget=False ShadowCaster=(True, Solid) LODIn=(12) LODOut=(40) ShadowReceiver=True Reflect=True
+		MeshFile=sm_rim_rf_low.gmt CollTarget=False HATTarget=False ShadowCaster=(True, Solid) LODIn=(40) LODOut=(300) ShadowReceiver=True Reflect=NoLOD
+		
+		MeshFile=sm_rotor_rf.gmt CollTarget=False HATTarget=False ShadowCaster=(True, Solid) LODIn=(0) LODOut=(30) ShadowReceiver=True Reflect=True
+		MeshFile=sm_discglow_rf.gmt CollTarget=False HATTarget=False ShadowCaster=False LODIn=(0) LODOut=(60) ShadowReceiver=False Reflect=True
+	}
+
+	Instance=RFSPINDLE
+	{
+		Moveable=True
+		MeshFile=sm_caliper_rf.gmt CollTarget=False HATTarget=False LODIn=(0.00) LODOut=(10.0) ShadowReceiver=True
+	}
+
+	Instance=LRTIRE
+	{
+		Moveable=True
+		MeshFile=sm_tire_lr_max.gmt CollTarget=False HATTarget=False ShadowCaster=(True, Solid) LODIn=(0) LODOut=(12) ShadowReceiver=True Reflect=True
+		MeshFile=sm_tire_lr_med.gmt CollTarget=False HATTarget=False ShadowCaster=(True, Solid) LODIn=(12) LODOut=(40) ShadowReceiver=True Reflect=True
+		MeshFile=sm_tire_lr_low.gmt CollTarget=False HATTarget=False ShadowCaster=(True, Solid) LODIn=(40) LODOut=(350) ShadowReceiver=True Reflect=NoLOD
+
+		MeshFile=sm_rim_lr_max.gmt CollTarget=False HATTarget=False ShadowCaster=(True, Solid) LODIn=(0) LODOut=(12) ShadowReceiver=True Reflect=True
+		MeshFile=sm_rim_lr_med.gmt CollTarget=False HATTarget=False ShadowCaster=(True, Solid) LODIn=(12) LODOut=(40) ShadowReceiver=True Reflect=True
+		MeshFile=sm_rim_lr_low.gmt CollTarget=False HATTarget=False ShadowCaster=(True, Solid) LODIn=(40) LODOut=(300) ShadowReceiver=True Reflect=NoLOD
+		
+		MeshFile=sm_rotor_lr.gmt CollTarget=False HATTarget=False ShadowCaster=(True, Solid) LODIn=(0) LODOut=(30) ShadowReceiver=True Reflect=True
+		MeshFile=sm_discglow_lr.gmt CollTarget=False HATTarget=False ShadowCaster=False LODIn=(0) LODOut=(60) ShadowReceiver=False Reflect=True
+	}
+
+	Instance=LRSPINDLE
+	{
+		Moveable=True
+		MeshFile=sm_caliper_lr.gmt CollTarget=False HATTarget=False LODIn=(0.00) LODOut=(10.0) ShadowReceiver=True
+	}
+
+	Instance=RRTIRE
+	{
+		Moveable=True
+		MeshFile=sm_tire_rr_max.gmt CollTarget=False HATTarget=False ShadowCaster=(True, Solid) LODIn=(0) LODOut=(12) ShadowReceiver=True Reflect=True
+		MeshFile=sm_tire_rr_med.gmt CollTarget=False HATTarget=False ShadowCaster=(True, Solid) LODIn=(12) LODOut=(40) ShadowReceiver=True Reflect=True
+		MeshFile=sm_tire_rr_low.gmt CollTarget=False HATTarget=False ShadowCaster=(True, Solid) LODIn=(40) LODOut=(350) ShadowReceiver=True Reflect=NoLOD
+
+		MeshFile=sm_rim_rr_max.gmt CollTarget=False HATTarget=False ShadowCaster=(True, Solid) LODIn=(0) LODOut=(12) ShadowReceiver=True Reflect=True
+		MeshFile=sm_rim_rr_med.gmt CollTarget=False HATTarget=False ShadowCaster=(True, Solid) LODIn=(12) LODOut=(40) ShadowReceiver=True Reflect=True
+		MeshFile=sm_rim_rr_low.gmt CollTarget=False HATTarget=False ShadowCaster=(True, Solid) LODIn=(40) LODOut=(300) ShadowReceiver=True Reflect=NoLOD
+		
+		MeshFile=sm_rotor_rr.gmt CollTarget=False HATTarget=False ShadowCaster=(True, Solid) LODIn=(0) LODOut=(30) ShadowReceiver=True Reflect=True
+		MeshFile=sm_discglow_rr.gmt CollTarget=False HATTarget=False ShadowCaster=False LODIn=(0) LODOut=(60) ShadowReceiver=False Reflect=True
+	}
+
+	Instance=RRSPINDLE
+	{
+		Moveable=True
+		MeshFile=sm_caliper_rr.gmt CollTarget=False HATTarget=False LODIn=(0.00) LODOut=(10.0) ShadowReceiver=True
+	}
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+}

@@ -1,0 +1,21 @@
+//---------------------------------------------------------------------
+
+SearchPath=.
+
+
+//--------------ANIMATED STUFF-----------------------------------------
+
+Instance=Driver
+{
+  VisGroups=(32) 
+  MeshFile=SM_DRIVER_MAX.gmt CollTarget=False HATTarget=False
+  AnimFile=SM_STEER.ANM
+}
+Instance=SWheel
+{
+	MeshFile=sm_sw.gmt CollTarget=False HATTarget=False
+}
+Instance=SWheel
+{
+	MeshFile=sm_swheel.gmt CollTarget=False HATTarget=False
+}

@@ -1,0 +1,289 @@
+//
+// All information is proprietary to Image Space Incorporated.
+//
+//            (c) 2005 Image Space Incorporated
+//                   All Rights Reserved.
+//
+
+//-----------------------
+// ENGINE SOUNDS 
+//-----------------------
+
+// ENGINE SOUNDS (INSIDE)
+
+VS_INSIDE_POWER_ENGINE_1=SpecMiata\sm_idle
+VS_INSIDE_POWER_ENGINE_2=SpecMiata\sm_on_low
+VS_INSIDE_POWER_ENGINE_3=SpecMiata\sm_on_mid
+VS_INSIDE_POWER_ENGINE_4=SpecMiata\sm_on_high
+
+VS_INSIDE_COAST_ENGINE_1=SpecMiata\sm_idle
+VS_INSIDE_COAST_ENGINE_2=SpecMiata\sm_off_low
+VS_INSIDE_COAST_ENGINE_3=SpecMiata\sm_off_mid
+VS_INSIDE_COAST_ENGINE_4=SpecMiata\sm_off_high
+
+VS_INSIDE_ENGINE_STARTING=SpecMiata\sm_starting
+VS_INSIDE_ENGINE_STARTER=SpecMiata\sm_starter
+
+// ENGINE SOUNDS (OUTSIDE)
+
+VS_OUTSIDE_POWER_ENGINE_1=SpecMiata\sm_idle
+VS_OUTSIDE_POWER_ENGINE_2=SpecMiata\sm_on_low_ex
+VS_OUTSIDE_POWER_ENGINE_3=SpecMiata\sm_on_mid_ex
+VS_OUTSIDE_POWER_ENGINE_4=SpecMiata\sm_on_high_ex
+
+VS_OUTSIDE_COAST_ENGINE_1=SpecMiata\sm_idle
+VS_OUTSIDE_COAST_ENGINE_2=SpecMiata\sm_off_low_ex
+VS_OUTSIDE_COAST_ENGINE_3=SpecMiata\sm_off_mid_ex
+VS_OUTSIDE_COAST_ENGINE_4=SpecMiata\sm_off_high_ex
+
+VS_OUTSIDE_ENGINE_STARTING=SpecMiata\sm_starting
+VS_OUTSIDE_ENGINE_STARTER=SpecMiata\sm_starter
+
+// BACKFIRE & SHIFT SOUNDS (INSIDE)
+
+VS_INSIDE_SHIFT_UP_1=SpecMiata\gear1_shiftup_in.wav
+VS_INSIDE_SHIFT_UP_2=SpecMiata\gear2_shiftup_in.wav
+VS_INSIDE_SHIFT_UP_3=SpecMiata\gear2_shiftup_in.wav
+VS_INSIDE_SHIFT_DOWN_1=SpecMiata\gear1_shiftdown_in.wav
+VS_INSIDE_SHIFT_DOWN_2=SpecMiata\gear2_shiftdown_in.wav
+VS_INSIDE_SHIFT_DOWN_3=SpecMiata\gear2_shiftdown_in.wav
+
+VS_INSIDE_BACKFIRE_1=SpecMiata\BF1_in.wav
+VS_INSIDE_BACKFIRE_2=SpecMiata\BF1_rumble_short_in.wav
+VS_INSIDE_BACKFIRE_3=SpecMiata\BF1_rumble_long_in.wav
+
+// BACKFIRE & SHIFT SOUNDS (OUTSIDE)
+
+VS_OUTSIDE_SHIFT_UP_1=SpecMiata\gear1_shiftup_ex.wav
+VS_OUTSIDE_SHIFT_UP_2=SpecMiata\gear2_shiftup_ex.wav
+VS_OUTSIDE_SHIFT_UP_3=SpecMiata\gear2_shiftup_ex.wav
+VS_OUTSIDE_SHIFT_DOWN_1=SpecMiata\gear1_shiftdown_ex.wav
+VS_OUTSIDE_SHIFT_DOWN_2=SpecMiata\gear2_shiftdown_ex.wav
+VS_OUTSIDE_SHIFT_DOWN_3=SpecMiata\gear2_shiftdown_ex.wav
+
+VS_OUTSIDE_BACKFIRE_1=SpecMiata\BF2_ex.wav
+VS_OUTSIDE_BACKFIRE_2=SpecMiata\BF2_rumble_short_ex.wav
+VS_OUTSIDE_BACKFIRE_3=SpecMiata\BF2_rumble_long_ex.wav
+
+// ROAD SURFACE SOUNDS  (INSIDE)
+
+VS_INSIDE_ROADNOISE_DRY=TMTires\roadroll_in.wav
+VS_INSIDE_ROADNOISE_WET=TMTires\roadroll_in.wav
+VS_INSIDE_ROADNOISE_GRASS=TMTires\grassroll_in.wav
+VS_INSIDE_ROADNOISE_DIRT=TMTires\gravelroll_in.wav
+VS_INSIDE_ROADNOISE_GRAVEL=1.30,TMTires\gravelroll_in.wav
+VS_INSIDE_ROADNOISE_RUMBLESTRIP=Secondary\rumble_in.wav
+
+// ROAD SURFACE SOUNDS  (OUTSIDE)
+
+VS_OUTSIDE_ROADNOISE_DRY=1.20,TMTires\roadroll_ex.wav
+VS_OUTSIDE_ROADNOISE_WET=1.20,TMTires\roadroll_ex.wav
+VS_OUTSIDE_ROADNOISE_GRASS=TMTires\grassroll_ex.wav
+VS_OUTSIDE_ROADNOISE_DIRT=TMTires\gravelroll_ex.wav
+VS_OUTSIDE_ROADNOISE_GRAVEL=1.30,TMTires\gravelroll_ex.wav
+VS_OUTSIDE_ROADNOISE_RUMBLESTRIP=Secondary\rumble_ex.wav
+
+// SKID SOUNDS (INSIDE)
+
+VS_INSIDE_TIRE_SCRUB=1.30,TMTires\tyres_asphalt_scrub_slick_in.wav
+VS_INSIDE_SKID_DRY=1.20,TMTires\tyres_asphalt_skid_slick_in.wav
+VS_INSIDE_SKID_WET=1.20,TMTires\tyres_asphalt_skid_slick_in.wav
+VS_INSIDE_SKID_GRASS=1.20,TMTires\grassskid_in.wav
+VS_INSIDE_SKID_DIRT=TMTires\gravelskid_in.wav
+VS_INSIDE_SKID_GRAVEL=1.30,TMTires\gravelskid_in.wav
+
+// SKID SOUNDS (OUTSIDE)
+
+VS_OUTSIDE_TIRE_SCRUB=1.10,TMTires\tyres_asphalt_scrub_slick_ex.wav
+VS_OUTSIDE_SKID_DRY=TMTires\tyres_asphalt_skid_slick_ex.wav
+VS_OUTSIDE_SKID_WET=TMTires\tyres_asphalt_skid_slick_ex.wav
+VS_OUTSIDE_SKID_GRASS=1.20,TMTires\grassskid_ex.wav
+VS_OUTSIDE_SKID_DIRT=TMTires\gravelskid_ex.wav
+VS_OUTSIDE_SKID_GRAVEL=1.30,TMTires\gravelskid_ex.wav
+
+ScrubIndividually=1
+ScrubFreq=(1.00,-0.25,0.005,-0.00003)
+
+// SUSPENSION/CHASSIS
+
+SuspensionVolume=0.8 //(exaggerated, should probably be more like 0.15) // converts sum of (absolute value of) vertical suspension velocities to a volume
+SuspensionFreq=(2.00,0.40,0.80) // (max_vel, mult, base), so frequency multiplier = min( actual_susp_vel, max_vel ) * mult + base
+VS_INSIDE_SUSPENSION=2.00,Secondary\chassis_noise_2_in.wav
+VS_OUTSIDE_SUSPENSION=1.60,Secondary\chassis_noise_2_ex.wav
+
+DirtyTire=(0.001,100.0) // frequency adjustment based on speed & dirtiness, threshold speed between low & high samples
+VS_INSIDE_DIRTY_TIRE_LOW=1.40,Secondary\marbles_low_loop_int.wav
+VS_INSIDE_DIRTY_TIRE_HIGH=1.40,Secondary\marbles_high_loop_int.wav
+VS_OUTSIDE_DIRTY_TIRE_LOW=1.30,Secondary\marbles_low_loop_ext.wav
+VS_OUTSIDE_DIRTY_TIRE_HIGH=1.30,Secondary\marbles_high_loop_ext.wav
+
+// CONTACT SOUNDS  (INSIDE)
+
+VS_INSIDE_SCRAPING=secondary\scrape_barrier_in.wav
+VS_INSIDE_HIT_WALL_1=1.60,secondary\hit1_wall.wav
+VS_INSIDE_HIT_WALL_2=1.60,secondary\hit2_wall.wav
+VS_INSIDE_HIT_WALL_3=1.60,secondary\hit3_wall.wav
+VS_INSIDE_HIT_WALL_4=1.60,secondary\hit4_wall.wav
+VS_INSIDE_HIT_WALL_5=1.60,secondary\hit5_wall.wav
+
+VS_INSIDE_HIT_OTHERCAR_1=1.60,secondary\hit1_vehicle.wav
+VS_INSIDE_HIT_OTHERCAR_2=1.60,secondary\hit2_vehicle.wav
+VS_INSIDE_HIT_OTHERCAR_3=1.60,secondary\hit3_vehicle.wav
+VS_INSIDE_HIT_OTHERCAR_4=1.60,secondary\hit4_vehicle.wav
+VS_INSIDE_HIT_OTHERCAR_5=1.60,secondary\hit5_vehicle.wav
+
+VS_INSIDE_HIT_CONE=1.60,secondary\conehit.wav
+
+// CONTACT SOUNDS  (OUTSIDE)
+
+VS_OUTSIDE_SCRAPING=secondary\scrape_barrier_ex.wav
+
+VS_OUTSIDE_HIT_WALL_1=1.60,secondary\hit1_wall.wav
+VS_OUTSIDE_HIT_WALL_2=1.60,secondary\hit2_wall.wav
+VS_OUTSIDE_HIT_WALL_3=1.60,secondary\hit3_wall.wav
+VS_OUTSIDE_HIT_WALL_4=1.60,secondary\hit4_wall.wav
+VS_OUTSIDE_HIT_WALL_5=1.60,secondary\hit5_wall.wav
+VS_outSIDE_HIT_OTHERCAR_1=1.60,secondary\hit1_vehicle.wav
+VS_outSIDE_HIT_OTHERCAR_2=1.60,secondary\hit2_vehicle.wav
+VS_outSIDE_HIT_OTHERCAR_3=1.60,secondary\hit3_vehicle.wav
+VS_outSIDE_HIT_OTHERCAR_4=1.60,secondary\hit4_vehicle.wav
+VS_outSIDE_HIT_OTHERCAR_5=1.60,secondary\hit5_vehicle.wav
+
+VS_OUTSIDE_HIT_CONE=1.60,secondary\conehit.wav
+
+
+// AMBIENT SOUNDS (INSIDE)
+
+VS_INSIDE_SPEED_LIMITER_TOGGLE=SpecMiata\limiter.wav
+VS_INSIDE_LAUNCH_CONTROL_TOGGLE=SpecMiata\launch.wav
+VS_INSIDE_WIND_NOISE=SpecMiata\roadstones_in.wav
+VS_INSIDE_ON_FIRE=SpecMiata\fire_in.wav
+VS_INSIDE_HORN=SpecMiata\horn_in.wav
+VS_INSIDE_TRACTION_CONTROL=SpecMiata\tc_in.wav
+VS_INSIDE_SEAT=Secondary\seat.wav 
+VS_INSIDE_MIRROR=Secondary\mirror.wav
+
+// AMBIENT SOUNDS (OUTSIDE)
+
+VS_OUTSIDE_SPEED_LIMITER_TOGGLE=SpecMiata\limiter.wav
+VS_OUTSIDE_LAUNCH_CONTROL_TOGGLE=SpecMiata\launch.wav
+VS_OUTSIDE_WIND_NOISE=SpecMiata\roadstones_ex.wav
+VS_OUTSIDE_ON_FIRE=SpecMiata\fire_in.wav
+VS_OUTSIDE_HORN=SpecMiata\horn_ex.wav
+VS_OUTSIDE_TRACTION_CONTROL=SpecMiata\tc_in.wav
+VS_INSIDE_SEAT=SpecMiata\seat.wav 
+VS_INSIDE_MIRROR=SpecMiata\mirror.wav
+
+//-------------------------
+// ATTENUATION
+//-------------------------
+
+EngineRange=1.00
+EngineShape=1.00
+EngineAmbient=2.5
+
+ShiftRange=1.00
+ShiftShape=1.00
+ShiftAmbient=2.5
+
+OtherRange=1.00
+OtherShape=1.00
+OtherAmbient=2.5
+
+
+// ENGINE VOLUME MIX
+playerEngineVolumeMinimum=0.75
+playerEngineVolumeThrottleFraction=0.15
+playerEngineVolumeRevFraction=0.1
+
+non-playerEngineVolumeMinimum=0.3
+non-playerEngineVolumeThrottleFraction=0.3
+non-playerEngineVolumeRevFraction=0.4
+
+
+// ENGINE THROTTLE-POSITION MIX
+EngineLoadBlendInside=(0.1,0.4)   // power sound starts to blend in at 30% throttle, coast sound blends out at 70%
+EngineLoadBlendOutside=(0.1,0.4)  // power sound starts to blend in at 30% throttle, coast sound blends out at 70%
+
+
+// ENGINE REV-SAMPLE MIX
+// RPMs need to overlap properly from one sample to the next (maximum of two playing at once).
+// The first minimum RPM should be above zero but low enough to hear an engine stall.
+
+// coast inside
+EngRPMCoastInside=(0,     1.00,  2543.00,  1500.00) // zero-based engine number, minimum RPM, maximum RPM, natural RPM at which sample was recorded
+EngRPMCoastInside=(1,  1880.00,  3739.00,  2385.45)
+EngRPMCoastInside=(2,  3634.00,  6885.00,  3180.60)
+EngRPMCoastInside=(3,  6530.00,  8000.00,  4770.90)
+
+// power inside
+EngRPMPowerInside=(0,     1.00,  2543.00,  1500.00) // zero-based engine number, minimum RPM, maximum RPM, natural RPM at which sample was recorded
+EngRPMPowerInside=(1,  1880.00,  3739.00, 2385.45)
+EngRPMPowerInside=(2,  3634.00,  6885.00,  3180.60)
+EngRPMPowerInside=(3,  6530.00,  10000.00, 4770.90)
+
+// coast outside
+EngRPMCoastoutside=(0,     1.00,  2543.00,  1500.00) // zero-based engine number, minimum RPM, maximum RPM, natural RPM at which sample was recorded
+EngRPMCoastoutside=(1,  1880.00,  3739.00, 2385.45)
+EngRPMCoastoutside=(2,  3634.00,  6885.00,  3180.60)
+EngRPMCoastoutside=(3,  6530.00,  8000.00,  4770.90)
+
+
+// power outside
+EngRPMPoweroutside=(0,     1.00,  2543.00,  1500.00) // zero-based engine number, minimum RPM, maximum RPM, natural RPM at which sample was recorded
+EngRPMPoweroutside=(1,  1880.00,  3739.00,  2385.45)
+EngRPMPoweroutside=(2,  3634.00,  6885.00,  3180.60)
+EngRPMPoweroutside=(3,  6530.00,  10000.00, 4770.90)
+
+
+// TRANNY-SAMPLE MIX
+
+VS_INSIDE_COAST_TRANNY_1=SpecMiata\trans_offlow.wav
+VS_INSIDE_COAST_TRANNY_2=SpecMiata\trans_offhigh.wav
+VS_INSIDE_POWER_TRANNY_1=SpecMiata\trans_onlow.wav
+VS_INSIDE_POWER_TRANNY_2=SpecMiata\trans_onhigh.wav
+
+//VS_OUTSIDE_COAST_TRANNY_1=SpecMiata\trans_offlow.wav
+//VS_OUTSIDE_COAST_TRANNY_2=SpecMiata\trans_offhigh.wav
+//VS_OUTSIDE_POWER_TRANNY_1=SpecMiata\trans_onlow.wav
+//VS_OUTSIDE_POWER_TRANNY_2=SpecMiata\trans_onhigh.wav
+
+TrannyInitialRampRPM=2000.0 // ramp volume up to this driveshaft RPM because low pitches sound bad
+
+TrannyCoastBlendRPMInside=(2000.0, 9500.0) // blend range using driveshaft RPM
+TrannyCoast1RPMTorqueInside=(2736, 150.0) // natural RPM at which sample was recorded, transmission torque (in Nm) for maximum volume
+TrannyCoast2RPMTorqueInside=(8643, 150.0)
+
+TrannyPowerBlendRPMInside=(2000.0, 9500.0)
+TrannyPower1RPMTorqueInside=(4294, 240.0)
+TrannyPower2RPMTorqueInside=(9398, 240.0)
+
+TrannyCoastBlendRPMOutside=(4000.0, 10000.0) // blend range using driveshaft RPM
+TrannyCoast1RPMTorqueOutside=(3373, 150.0) // natural RPM at which sample was recorded, transmission torque (in Nm) for maximum volume
+TrannyCoast2RPMTorqueOutside=(4100, 150.0)
+
+TrannyPowerBlendRPMOutside=(4000.0, 10000.0)
+TrannyPower1RPMTorqueOutside=(3373, 240.0)
+TrannyPower2RPMTorqueOutside=(7785, 240.0)
+
+// BRAKE HISS 
+ 
+VS_INSIDE_BRAKES_LOW=SpecMiata\brakes_low_in.wav    // low-speed
+VS_INSIDE_BRAKES_HIGH=SpecMiata\brakes_high_in.wav  // high-speed 
+VS_OUTSIDE_BRAKES_LOW=SpecMiata\brakes_low_ex.wav   // low-speed 
+VS_OUTSIDE_BRAKES_HIGH=SpecMiata\brakes_high_ex.wav // high-speed
+ 
+// Note: all speeds are in meters/sec: 50.0 m/s = 112 mph = 180 kph 
+//
+// Lower BrakePressure numbers will cause the volume to ramp up faster with 
+// less applied pressure, and will be more steady at higher pressures.
+// Higher BrakePressure numbers will tend to make the volume more dependent
+// on applied pressure.
+//
+// Temperature effects on brake hiss volume are not implemented yet. 
+ 
+BrakeRampSpeed=3.0            // volume ramps up to this speed
+BrakeBlendSpeeds=(8.0, 23.0)  // blends between low- and high-speed brake hiss
+BrakeFadeSpeeds=(23.0, 42.0)  // fades out high-speed brake hiss between these speeds
+BrakePressure=0.20            // defines how brake pressure affects brake hiss volume
+
