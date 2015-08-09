@@ -24,7 +24,7 @@ Driver="Andy Rushing"
 Description="SPCL219"
 Engine="1.6"
 Manufacturer="Mazda"
-Classes="SPCL2_Miata"
+Classes="Miata, SPCL2_Miata"
 
 FullTeamName="SPCL2_Racing"
 TeamFounded=2010

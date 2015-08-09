@@ -24,7 +24,7 @@ Driver="Scott Hart"
 Description="SPCL195"
 Engine="1.6"
 Manufacturer="Mazda"
-Classes="SPCL1_Miata"
+Classes="Miata, SPCL1_Miata"
 
 FullTeamName="SPCL1_Racing"
 TeamFounded=2010

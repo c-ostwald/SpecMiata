@@ -24,7 +24,7 @@ Driver="Scott Hart"
 Description="SM95"
 Engine="1.6"
 Manufacturer="Mazda"
-Classes="Spec_Miata"
+Classes="Miata, Spec_Miata"
 
 FullTeamName="SM_Racing"
 TeamFounded=2010
