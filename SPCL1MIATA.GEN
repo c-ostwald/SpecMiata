@@ -236,11 +236,15 @@ Moveable=True
 
 	Light=HeadlightL
 	{
-		Type=Spot Pos=( 0.54, 0.42,-2.7) Dir=(0.0, -0.3, -0.7) Range=(0.0, 320.0) Active=False Attenuate=(0.15, 0.01, 0.00003) Hotspots=(10, 60) Falloff=(2) Intensity=(2.1) Color=(254, 234, 184)
+		Type=Spot Pos=( 0.5, 0.44,-1.9) Dir=(-0.08,-0.18,-0.85) Range=(0.0, 320.0) Active=False Attenuate=(0.1, 0.007, 0.00002) Hotspots=(10, 60) Falloff=(2) Intensity=(2.1) Color=(254, 234, 184)
 	}
 	Light=HeadlightR
 	{
-		Type=Spot Pos=(-0.54, 0.42,-2.7) Dir=(0.0, -0.3, -0.7) Range=(0.0, 320.0) Active=False Attenuate=(0.15, 0.01, 0.00003) Hotspots=(10, 60) Falloff=(2) Intensity=(2.1) Color=(254, 234, 184)
+		Type=Spot Pos=(-0.5, 0.44,-1.9) Dir=( 0.08,-0.18,-0.85) Range=(0.0, 320.0) Active=False Attenuate=(0.1, 0.007, 0.00002) Hotspots=(10, 60) Falloff=(2) Intensity=(2.1) Color=(254, 234, 184)
+	}
+	Light=TailLight
+	{
+		Type=Spot Pos=(0.0, 0.6, 1.857) Dir=(0.0,-0.1, 0.85) Range=(0.0, 4.0) Active=False Attenuate=(0.51, 0.06, 0.051) Hotspots=(80, 170) Falloff=(0.75) Intensity=(0.7) Color=(250, 05, 05)
 	}	
 
 	Instance=HlightDS   //Headlights -Driver Side
