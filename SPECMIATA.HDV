@@ -203,11 +203,12 @@ AIClutchEngageRate=9.0              // override for AI
 BaulkTorque=140.0                   // maximum torque transferred through gears while engaging them
 AllowManualOverride=1               // whether to allow manual shift overrides when using auto shifting
 SemiAutomatic=0                     // whether throttle and clutch are operated automatically (like an F1 car)
-UpshiftDelay=0.001                  // delay in selecting higher gear (low for semi-automatic, higher for manual)
-UpshiftClutchTime=0.0               // time to ease auto-clutch in AFTER upshift (0.0 for F1 cars)
+AntiStallLogic=(-1,1,10)            // User clutch level to deactivate (or special values -1=no anti-stall, 0="soft" anti-stall), max gear, time till ignition cut)
+UpshiftDelay=0.15                   // delay in selecting higher gear (low for semi-automatic, higher for manual)
+UpshiftClutchTime=0.1               // time to ease auto-clutch in AFTER upshift (0.0 for F1 cars)
 UpshiftLiftThrottle=0.0             // lift to this throttle fraction while upshifting (if controlled by game not player))
-DownshiftDelay=0.001                // delay in selecting lower gear (low for semi-automatic, higher for manual)
-DownshiftClutchTime=0.0             // time to ease auto-clutch in AFTER downshift (used to be SemiAutoClutchTime)
+DownshiftDelay=0.15                 // delay in selecting lower gear (low for semi-automatic, higher for manual)
+DownshiftClutchTime=0.1             // time to ease auto-clutch in AFTER downshift (used to be SemiAutoClutchTime)
 DownshiftBlipThrottle=0.70          // amount of throttle used to blip if controlled by game (instead of player)
 WheelDrive=REAR                     // which wheels are driven: REAR, FOUR (even torque split), or FRONT
 GearFile=SpecMiata_5-Speed.ini      // Must come before final/reverse/gear settings!
