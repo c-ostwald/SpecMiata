@@ -84,6 +84,20 @@ AIFuelMult=-1.0                // PLR file override for AI fuel usage - only pos
 AIPerfUsage=(1.0, 1.0, 1.0)    // PLR file overrides for (brake power usage, brake grip usage, corner grip usage) used by AI to estimate performance - only positive values will override, see PLR for defaults
 AITableParams=(-1.0, -1.0)     // PLR file overrides for (max load, min radius) used when computing performance estimate tables - only positive values will override, see PLR for defaults
 
+[AIDPENALTIES]
+TC=(0,0.004,0.006)              // Weight penalties for using different levels of aids.
+ABS=(0,0.006,0.01)              // First value is typically with the aid off so it should be 0.0.
+Stability=(0,0.005,0.008)       // Penalties should only be applied to aids that the
+Autoshift=(0,0.001,0.001,0.002) //  vehicle would not be allowed to run with.
+Steering=(0,0.005,0.008,0.01)   // Penalties should typically only be used if the aid improves
+Braking=(0,0.002,0.003)         // laptimes for a decent driver.
+Invulnerable=(0,0.0001)         // Values are fractions of the total vehicle mass,
+Opposite=(0,0.002)              //  and are modeled as extra weight in the fuel tank.
+SpinRecovery=(0,0.002)          // Do not use negative values.
+AutoPit=(0,0.002)
+AutoLift=(0,0.001)
+AutoBlip=(0,0.004)
+
 [BODYAERO]
 BodyDragBase=(0.320)            //.32// base drag
 BodyDragHeightAvg=(0.198)       //.190// drag increase with average ride height
