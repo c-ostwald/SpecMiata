@@ -1,0 +1,33 @@
+DefaultLivery="SPCL223.dds"
+Extra0="Interior"
+Extra2="Rims"
+Extra3="Cage"
+Extra4="Wing"
+
+HDVehicle=SpecMiata\SPCL2Miata.hdv
+Graphics=SpecMiata\SPCL2Miata.gen
+Spinner=SpecMiata\SPCL2Miata_Spinner.gen
+Sounds=SpecMiata_Sounds.sfx
+Upgrades=SPCL2Miata_Upgrades.ini
+Cameras=SpecMiata_Cams.cam
+HeadPhysics=SpecMiata_Headphysics.ini
+Cockpit=SpecMiata_Cockpitinfo.ini
+AIUpgradeClass=SPCL2
+
+//////////////////////////TEAM HISTORY AND INFORMATION///////////////////////////////////////////
+
+
+Number=23
+Team="SPCL2_Racing"
+PitGroup="Group5"
+Driver="Todd Lamb"
+Description="SPCL223"
+Engine="1.6"
+Manufacturer="Mazda"
+Classes="SPCL2_Miata"
+
+FullTeamName="SPCL2_Racing"
+TeamFounded=2010
+TeamHeadquarters="Texas"
+
+Category="SPCL2 Miata"

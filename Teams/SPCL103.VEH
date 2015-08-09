@@ -1,0 +1,33 @@
+DefaultLivery="SPCL103.dds"
+Extra0="Interior"
+Extra2="Rims"
+Extra3="Cage"
+Extra4="Wing"
+
+HDVehicle=SpecMiata\SPCL1Miata.hdv
+Graphics=SpecMiata\SPCL1Miata.gen
+Spinner=SpecMiata\SPCL1Miata_Spinner.gen
+Sounds=SpecMiata_Sounds.sfx
+Upgrades=SPCL1Miata_Upgrades.ini
+Cameras=SpecMiata_Cams.cam
+HeadPhysics=SpecMiata_Headphysics.ini
+Cockpit=SpecMiata_Cockpitinfo.ini
+AIUpgradeClass=SPCL1
+
+//////////////////////////TEAM HISTORY AND INFORMATION///////////////////////////////////////////
+
+
+Number=03
+Team="SPCL1_Racing"
+PitGroup="Group1"
+Driver="Andrew Charbonneau"
+Description="SPCL103"
+Engine="1.6"
+Manufacturer="Mazda"
+Classes="SPCL1_Miata"
+
+FullTeamName="SPCL1_Racing"
+TeamFounded=2010
+TeamHeadquarters="Texas"
+
+Category="SPCL1 Miata"
