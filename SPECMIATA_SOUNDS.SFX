@@ -154,25 +154,25 @@ VS_OUTSIDE_HIT_CONE=1.60,secondary\conehit.wav
 
 // AMBIENT SOUNDS (INSIDE)
 
-VS_INSIDE_SPEED_LIMITER_TOGGLE=SpecMiata\limiter.wav
-VS_INSIDE_LAUNCH_CONTROL_TOGGLE=SpecMiata\launch.wav
-VS_INSIDE_WIND_NOISE=SpecMiata\roadstones_in.wav
-VS_INSIDE_ON_FIRE=SpecMiata\fire_in.wav
-VS_INSIDE_HORN=SpecMiata\horn_in.wav
-VS_INSIDE_TRACTION_CONTROL=SpecMiata\tc_in.wav
+VS_INSIDE_SPEED_LIMITER_TOGGLE=Secondary\limiter.wav
+VS_INSIDE_LAUNCH_CONTROL_TOGGLE=Secondary\launch.wav
+VS_INSIDE_WIND_NOISE=2.0,Secondary\roadstones_in.wav
+VS_INSIDE_ON_FIRE=Secondary\fire_in.wav
+VS_INSIDE_HORN=Secondary\horn_in.wav
+VS_INSIDE_TRACTION_CONTROL=Secondary\tc_in.wav
 VS_INSIDE_SEAT=Secondary\seat.wav 
 VS_INSIDE_MIRROR=Secondary\mirror.wav
 
 // AMBIENT SOUNDS (OUTSIDE)
 
-VS_OUTSIDE_SPEED_LIMITER_TOGGLE=SpecMiata\limiter.wav
-VS_OUTSIDE_LAUNCH_CONTROL_TOGGLE=SpecMiata\launch.wav
-VS_OUTSIDE_WIND_NOISE=SpecMiata\roadstones_ex.wav
-VS_OUTSIDE_ON_FIRE=SpecMiata\fire_in.wav
-VS_OUTSIDE_HORN=SpecMiata\horn_ex.wav
-VS_OUTSIDE_TRACTION_CONTROL=SpecMiata\tc_in.wav
-VS_INSIDE_SEAT=SpecMiata\seat.wav 
-VS_INSIDE_MIRROR=SpecMiata\mirror.wav
+VS_OUTSIDE_SPEED_LIMITER_TOGGLE=Secondary\limiter.wav
+VS_OUTSIDE_LAUNCH_CONTROL_TOGGLE=Secondary\launch.wav
+VS_OUTSIDE_WIND_NOISE=1.8,Secondary\roadstones_ex.wav
+VS_OUTSIDE_ON_FIRE=Secondary\fire_in.wav
+VS_OUTSIDE_HORN=Secondary\horn_ex.wav
+VS_OUTSIDE_TRACTION_CONTROL=Secondary\tc_ex.wav
+VS_INSIDE_SEAT=Secondary\seat.wav 
+VS_INSIDE_MIRROR=Secondary\mirror.wav
 
 //-------------------------
 // ATTENUATION
