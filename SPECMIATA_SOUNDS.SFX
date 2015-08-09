@@ -174,21 +174,21 @@ VS_OUTSIDE_TRACTION_CONTROL=Secondary\tc_ex.wav
 VS_INSIDE_SEAT=Secondary\seat.wav 
 VS_INSIDE_MIRROR=Secondary\mirror.wav
 
-//-------------------------
+
 // ATTENUATION
-//-------------------------
+//(<range>,<oldShape>,<ambient>,<expShape>)
+// range, it is highly recommend leaving this at 1.0 when using exp attenuation
+// oldShape, old attenuation shape (recommended to disable 0.0)
+// ambient, range within which the volume is 100%
+// expShape, lower values will make the volume higher, higher values will make the volume lower
+EngineAttenInside=(1.0, 0, 1.1, 0.022) //(<range>,<oldShape>,<ambient>,<expShape>)
+EngineAttenOutside=(1.0, 0, 1.1, 0.01)
 
-EngineRange=1.00
-EngineShape=1.00
-EngineAmbient=2.5
+ShiftAttenInside=(1.0, 0, 1.0, 0.02)
+ShiftAttenOutside=(1.0, 0, 1.0, 0.01)
 
-ShiftRange=1.00
-ShiftShape=1.00
-ShiftAmbient=2.5
-
-OtherRange=1.00
-OtherShape=1.00
-OtherAmbient=2.5
+OtherAttenInside=(1.0, 0, 0.1, 0.02)
+OtherAttenOutside=(1.0, 0, 0.1, 0.01)
 
 
 // ENGINE VOLUME MIX
