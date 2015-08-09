@@ -188,6 +188,10 @@ MarshalPushForce=750           // force that a marshal may use when vehicle is a
 [ENGINE]
 Normal=SpecMiata_Engine             // unrestricted engine
 RestrictorPlate=SpecMiata_Engine    // restrictor plate engine
+GeneralTorqueMult*=0.979        // friction and non-optimal conditions (engine wear, etc)
+GeneralPowerMult*=0.977
+GeneralEngineBrakeMult*=1.0
+TorqueCurveShift*=1.0
 
 [DRIVELINE]
 ClutchInertia=0.019
