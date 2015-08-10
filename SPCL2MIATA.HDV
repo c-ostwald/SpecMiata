@@ -99,6 +99,7 @@ AutoLift=(0,0.001)
 AutoBlip=(0,0.004)
 
 [FRONTWING]
+FWForceDistrib=(1.0:front_subbody)
 FWRange=(0, 1, 1)
 FWSetting=0
 FWMaxHeight=(0.20)
@@ -108,6 +109,10 @@ FWDraftLiftMult=1.05            // Effect of draft on front wing's lift response
 FWLiftHeightPlus=(0,0.400,0)
 FWLiftSideways=(0.33)
 FWLiftPeakYaw=(3.0, 1.001)
+FWNegRakeDrag=(-0.00, 0.000, 5.0) // if rake is negative (nose up), use absolute value of rake angle: (coeff*degrees, coeff*degrees^2, maxDegrees)
+FWPosRakeDrag=( 0.00,-0.000, 5.0) // if rake is positive (nose down): (coeff*degrees, coeff*degrees^2, maxDegrees)
+FWNegRakeLift=(-0.00, 0.000, 5.0) // if rake is negative, use absolute value of rake angle: (coeff*degrees, coeff*degrees^2, maxDegrees)
+FWPosRakeLift=( 0.00,-0.000, 5.0) // if rake is positive: (coeff*degrees, coeff*degrees^2, maxDegrees)
 FWLeft=(-0.13, 0.0, 0.0)
 FWRight=(0.13, 0.0, 0.0)
 FWUp=(  0.0,-0.14, 0.01)
@@ -118,10 +123,11 @@ FWRot=(0.02, 0.01, 0.03)
 FWCenter=(0.00, 0.06,-0.48)        // center of front wing forces (offset from center of front axle in ref plane)
 
 [REARWING]
+RWForceDistrib=(1.0:rear_subbody)
 RWRange=(0, 1, 4)          // several settings
 RWSetting=1
-RWDragParams=( 0.015,  0.013, 0.0000) // 1st & 2nd order with setting
-RWLiftParams=(-0.064, -0.039, 0.0007) // downforce is not quite linear with setting
+RWDragParams=( 0.030,  0.026, 0.0000) // 1st & 2nd order with setting
+RWLiftParams=(-0.085, -0.052, 0.0007) // downforce is not quite linear with setting
 RWLiftSideways=(0.0)            // downforce actually increases slightly at a
 RWLiftPeakYaw=(4.0, 1.02)       //   small yaw angle for this wing configuration
 RWLeft=(-0.03, 0.0, 0.0)
@@ -134,12 +140,17 @@ RWRot=(0.02, 0.01, 0.03)
 RWCenter=(0.00, 0.75, 0.50)     // center of rear wing forces (offset from center of rear axle at ref plane)
 
 [BODYAERO]
+BodyAeroForceDistrib=(0.47:front_subbody:(0,0,-0.4),0.53:rear_subbody:(0,0,0.4))
 BodyDragBase=(0.320)            //.32// base drag
 BodyDragHeightAvg=(0.198)       //.190// drag increase with average ride height
 BodyDragHeightDiff=(0.414)      //.350// drag increase with front/rear ride height difference
 BodyMaxHeight=(0.23)            // maximum ride height that affects drag/lift
 DraftBalanceMult=1.00           // effect of draft on aerodynamic downforce balance of car (bigger numbers exaggerate the effect)
 BodyDraftLiftMult=1.01          // effect of draft on body's lift response
+BodyNegRakeDrag=(-0.00, 0.000, 5.0) // if rake is negative, use absolute value of rake angle: (coeff*degrees, coeff*degrees^2, maxDegrees)
+BodyPosRakeDrag=( 0.00,-0.000, 5.0) // if rake is positive: (coeff*degrees, coeff*degrees^2, maxDegrees)
+BodyNegRakeLift=(-0.00, 0.000, 5.0) // if rake is negative, use absolute value of rake angle: (coeff*degrees, coeff*degrees^2, maxDegrees)
+BodyPosRakeLift=( 0.00,-0.000, 5.0) // if rake is positive: (coeff*degrees, coeff*degrees^2, maxDegrees)
 BodyLeft=(-0.85, 0.30, 0.00)    //-1.00, 0.31// aero forces from moving left
 BodyRight=(0.85, 0.30, 0.00)    // 1.00, 0.31// aero forces from moving right
 BodyUp=(   0.00,-2.00, 0.00)    // 0.00,-2.65, 0.00 // aero forces from moving up

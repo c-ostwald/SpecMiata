@@ -99,12 +99,18 @@ AutoLift=(0,0.001)
 AutoBlip=(0,0.004)
 
 [REARWING]
+RWForceDistrib=(1.0:rear_subbody)
 RWRange=(0, 1, 4)          // several settings
 RWSetting=1
 RWDragParams=( 0.015,  0.013, 0.0000) // 1st & 2nd order with setting
 RWLiftParams=(-0.064, -0.039, 0.0007) // downforce is not quite linear with setting
+RWDraftLiftMult=1.15           // effect of draft on rear wing's lift response
 RWLiftSideways=(0.0)            // downforce actually increases slightly at a
 RWLiftPeakYaw=(4.0, 1.02)       //   small yaw angle for this wing configuration
+RWNegRakeDrag=(-0.00, 0.000, 5.0) // if rake is negative, use absolute value of rake angle: (coeff*degrees, coeff*degrees^2, maxDegrees)
+RWPosRakeDrag=( 0.00,-0.000, 5.0) // if rake is positive: (coeff*degrees, coeff*degrees^2, maxDegrees)
+RWNegRakeLift=(-0.00, 0.000, 5.0) // if rake is negative, use absolute value of rake angle: (coeff*degrees, coeff*degrees^2, maxDegrees)
+RWPosRakeLift=( 0.00,-0.000, 5.0) // if rake is positive: (coeff*degrees, coeff*degrees^2, maxDegrees)
 RWLeft=(-0.03, 0.0, 0.0)
 RWRight=(0.03, 0.0, 0.0)
 RWUp=(0.0, -0.05, 0.0)
@@ -115,12 +121,17 @@ RWRot=(0.02, 0.01, 0.03)
 RWCenter=(0.00, 0.75, 0.50)     // center of rear wing forces (offset from center of rear axle at ref plane)
 
 [BODYAERO]
+BodyAeroForceDistrib=(0.47:front_subbody:(0,0,-0.4),0.53:rear_subbody:(0,0,0.4))
 BodyDragBase=(0.320)            //.32// base drag
 BodyDragHeightAvg=(0.198)       //.190// drag increase with average ride height
 BodyDragHeightDiff=(0.414)      //.350// drag increase with front/rear ride height difference
 BodyMaxHeight=(0.23)            // maximum ride height that affects drag/lift
 DraftBalanceMult=1.00           // effect of draft on aerodynamic downforce balance of car (bigger numbers exaggerate the effect)
 BodyDraftLiftMult=1.01          // effect of draft on body's lift response
+BodyNegRakeDrag=(-0.00, 0.000, 5.0) // if rake is negative, use absolute value of rake angle: (coeff*degrees, coeff*degrees^2, maxDegrees)
+BodyPosRakeDrag=( 0.00,-0.000, 5.0) // if rake is positive: (coeff*degrees, coeff*degrees^2, maxDegrees)
+BodyNegRakeLift=(-0.00, 0.000, 5.0) // if rake is negative, use absolute value of rake angle: (coeff*degrees, coeff*degrees^2, maxDegrees)
+BodyPosRakeLift=( 0.00,-0.000, 5.0) // if rake is positive: (coeff*degrees, coeff*degrees^2, maxDegrees)
 BodyLeft=(-0.85, 0.30, 0.00)    //-1.00, 0.31// aero forces from moving left
 BodyRight=(0.85, 0.30, 0.00)    // 1.00, 0.31// aero forces from moving right
 BodyUp=(   0.00,-2.00, 0.00)    // 0.00,-2.65, 0.00 // aero forces from moving up
