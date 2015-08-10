@@ -81,6 +81,7 @@ Data:
 
 [COMPOUND]
 Name="RA1"
+WetWeather=1
 FRONT:                                // Arguments: ALL, FRONT, REAR, LEFT, RIGHT, FRONTLEFT, FRONTRIGHT, REARLEFT, REARRIGHT
 TGM="205-50-R15"        // Physical tire geometry model (*.tgm) file
 DryLatLong=(1.479, 1.467)
